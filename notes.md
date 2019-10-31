@@ -7,5 +7,12 @@
 - add `"start": "node index.js"` for heroku to newly created `package.json`
 - add `"local": "nodemon index.js"` for testing locally
 - install nodemon (for local use) as development dependency  ==> `npm i -D nodemon`
+- install express, import
+- set up server to use express
+
+## Dev Process
+ - write code
+ - commit and push
+ - deployed to heroku (automatically updates when master branch updates)
 
 
