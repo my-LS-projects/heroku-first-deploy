@@ -10,9 +10,15 @@
 - install express, import
 - set up server to use express
 
+
+
 ## Dev Process
  - write code
  - commit and push
  - deployed to heroku (automatically updates when master branch updates)
 
 
+## Steps to prepare our API for Heroku deployment
+- install dot env as production dependency `npm i -D dotenv`
+- create dynamic port for heroku `cosnt port = process.env.PORT` in index.js
+- create `.env` file, set `PORT=8000`
