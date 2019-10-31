@@ -1,0 +1,25 @@
+{
+  "name": "heroku-first-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "local": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-LS-projects/heroku-first-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-LS-projects/heroku-first-deploy/issues"
+  },
+  "homepage": "https://github.com/my-LS-projects/heroku-first-deploy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
