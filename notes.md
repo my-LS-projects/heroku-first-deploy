@@ -4,7 +4,6 @@
 - open in editor
 - add `.gitignore` ===> `npx gitignore node`
 - add `package.json` (list of all dependencies app needs) ===> `npm init -y`
-- add `"start": "node index.js"` for heroku to newly created `package.json`
 - add `"local": "nodemon index.js"` for testing locally
 - install nodemon (for local use) as development dependency  ==> `npm i -D nodemon`
 - install express, import
@@ -19,6 +18,7 @@
 
 
 ## Steps to prepare our API for Heroku deployment
-- install dot env as production dependency `npm i -D dotenv`
-- create dynamic port for heroku `cosnt port = process.env.PORT` in index.js
+- install dot env as production dependency `npm i -P dotenv`
+- create dynamic port for heroku `const port = process.env.PORT || 8000` in index.js
 - create `.env` file, set `PORT=8000`
+- add `"start": "node index.js"` for heroku deployment to newly created `package.json` (make sure not nodemon)
